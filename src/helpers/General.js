@@ -15,7 +15,13 @@ export const getImage=(text)=>{
         src=Rain
     }else if(text==='Cloud'){
         src=Cloud
+    }else if(text==='Mist'){
+        src=Cloud
+    }else if(text==='Thundery outbreaks possible'){
+        src=Rain
     }
+
+   
 
     return src;
 }
