@@ -31,7 +31,7 @@ export default function SearchSide() {
             // Unbind the event listener on clean up
             document.removeEventListener("mousedown", handleClickOutside);
           };
-        }, [getState.isShow==true]);
+        }, [ref]);
       }
 
 
