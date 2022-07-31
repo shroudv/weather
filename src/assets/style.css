@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+
+
+:root {
+    --text-primary-color: rgb(46 46 46);
+    /* --text-secondary-color:rgb(46 46 46); */
+    --text-lgiht-color: rgb(213 213 213);
+}
+
+body {
+    /* position: absolute; */
+    padding: 30px 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-block {
+    display: block;
+}
+
+
+.muted{
+    color: #d9d9d9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+input:focus {
+    outline: 1px solid rgb(37, 100, 235);
+}
+
+a {
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+.elements {
+    width: 26%;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.elements .c1 {
+    position: absolute;
+    left: -287px;
+    width: 577px;
+    height: 577px;
+    border-radius: 50%;
+    background: rgb(100, 91, 246);
+    background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+    -webkit-animation: circle 10s infinite linear;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    overflow: hidden;
+}
+
+.elements .c2 {
+    position: absolute;
+    transform: translateX(75px);
+    right: -391px;
+    width: 634px;
+    height: 728px;
+    border-radius: 50%;
+    background: rgb(161, 15, 149);
+    background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    top: -56px;
+    overflow: hidden;
+}
+
+
+.elements .c3 {
+    position: absolute;
+    transform: translateX(75px);
+    right: -1678px;
+    width: 1072px;
+    height: 1071px;
+    border-radius: 50%;
+    background: rgb(161, 15, 149);
+    background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    top: -509px;
+    overflow: hidden;
+}
+
+
+.elements .c4 {
+    position: absolute;
+    transform: translateX(75px);
+    right: -1134px;
+    width: 831px;
+    height: 832px;
+    border-radius: 50%;
+    background: rgb(161, 15, 149);
+    background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    top: 527px;
+    overflow: hidden;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.fade-delay-2000 {
+    animation-delay: 2s;
+}
+
+.fade-delay-4000 {
+    animation-delay: 4s;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.b-radius {
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.bolder {
+    font-weight: 600;
+}
+
+
+.card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: 27px;
+    backdrop-filter: blur(20px);
+    width: 31%;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 25px;
+    border: 1px solid #d9d9d9;
+    padding: 13px 20px;
+}
+
+.app-w {
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: 1px solid rgba(230, 228, 228, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.app-w .leftBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    padding: 50px;
+    border-right: 1px solid rgb(233, 231, 231);
+}
+
+.app-w .leftBar .searchSide {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.searchSide .resultSide {
+    display: none !important;
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin-top: 55px;
+    background-color: rgba(255, 255, 255, 0.486);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 25%);
+    border: 1px solid #ffffff45;
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.searchSide .resultSide.active{
+    display: block !important;
+}
+
+
+.searchSide .resultSide .results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.searchSide .resultSide .results .result {
+    cursor: pointer;
+    padding: 10px 0px;
+    border-bottom: 1px solid #8b8b8b2e;
+}
+
+.searchSide .resultSide .results .result:last-child {
+    border: unset;
+}
+
+.searchSide .resultSide .results .result h3 {
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+
+.app-w .leftBar .searchSide input {
+    width: 100%;
+}
+
+.app-w .leftBar .searchSide a {
+    padding: 2px;
+    border-radius: 50%;
+    position: absolute;
+    right: 7px;
+    transition: .2s;
+}
+
+.app-w .leftBar .searchSide a:hover {
+    background-color: #d9d9d9;
+}
+
+.app-w .leftBar .searchSide i {
+    width: 28px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+}
+
+.app-w .leftBar .currentDay {
+    text-align: center;
+}
+
+.app-w .leftBar .currentDay h1 {
+    margin-bottom: 20px;
+}
+
+.app-w .leftBar h2 {
+    color: var(--text-primary-color);
+}
+
+.app-w .leftBar .currentDay .vicon {
+    width: 100px;
+    margin: auto;
+}
+
+.app-w .leftBar .currentDay .vicon img {
+    width: 100%;
+}
+
+.app-w .leftBar .body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+
+}
+
+.leftBar .card {
+    color: var(--text-primary-color);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 4%);
+    border: 1px solid #ffffff45;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.leftBar .card .head span {
+    display: block;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.card img {
+    width: 37%;
+}
+
+.leftBar .card .content {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.leftBar .days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.leftBar .days .day {
+    width: auto;
+    padding: 5px;
+}
+
+.app-w .wrapper {
+    width: 78%;
+    padding: 50px;
+}
+
+.app-w .wrapper .card {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    gap: 20px;
+    border: 1px solid #80808026;
+}
+
+.app-w .wrapper .card .icon {
+    width: 60px;
+
+}
+
+.app-w .wrapper .card img {
+    width: 100%;
+}
+
+.app-w .wrapper .days {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.app-w .wrapper .days .card {
+    width: 48%;
+    border: 1px solid #ffffff61;
+}
+
+.app-w .wrapper .days .card span {
+    display: block;
+}
+
+
+
+@media screen and (min-width:1024px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    body {
+        padding: 30px;
+    }
+
+    .app-w {
+        display: flex;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.705);
+        border: 1px solid rgba(230, 228, 228, 0.5);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+        flex-wrap: wrap !important;
+    }
+
+    .card img {
+        width: 32%;
+    }
+
+
+    .app-w .wrapper {
+        width: 100%;
+        padding: 50px;
+    }
+
+    
+
+    
+    .app-w .wrapper .card {
+        padding: 13px;
+    }
+
+
+    .app-w .wrapper .days {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+
+    .app-w .wrapper .days .card{
+        font-size: 18px;
+    }
+
+
+    .leftBar .card .head span {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .leftBar .card .content {
+        width: 100%;
+        font-size: 25px;
+    }
+
+
+
+
+    .app-w .leftBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 50px;
+        border-right: 1px solid rgb(233, 231, 231);
+    }
+
+    .app-w .wrapper {
+        padding: 35px;
+    }
+
+    .app-w .leftBar .body {
+        gap: 20px;
+    }
+
+
+    .app-w .wrapper .days .card {
+    width: 47%;
+    border: 1px solid #ffffff61;
+}
+
+    .app-w .wrapper .days .card .content .dg {
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    .elements {
+        position: fixed;
+        top: 0;
+    }
+
+
+    .elements .c1 {
+        position: absolute;
+        left: -468px;
+        width: 577px;
+        height: 577px;
+        border-radius: 50%;
+        background: rgb(100, 91, 246);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        -webkit-animation: circle 10s infinite linear;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    }
+
+    .elements .c2 {
+        position: absolute;
+        transform: translateX(75px);
+        right: -449px;
+        width: 634px;
+        height: 728px;
+        border-radius: 50%;
+        background: rgb(161, 15, 149);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        top: 334px;
+    }
+
+    .elements .c3 {
+        display: none;
+        position: absolute;
+        transform: translateX(75px);
+        right: -1678px;
+        width: 1072px;
+        height: 1071px;
+        border-radius: 50%;
+        background: rgb(161, 15, 149);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        top: -509px;
+    }
+
+
+   
+
+}
+
+@media screen and (max-width:767px) {
+    body {
+        padding: 30px;
+    }
+
+    .app-w {
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .card img {
+        width: 65%;
+    }
+
+    .leftBar .card .head span {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .leftBar .card .content {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .app-w .leftBar {
+        padding: 35px;
+        width: 100% !important;
+        border-bottom: 1px solid #80808038;
+    }
+
+    .app-w .wrapper {
+        padding: 35px;
+    }
+
+    .app-w .leftBar .body {
+        gap: 20px;
+    }
+
+
+    .app-w .wrapper .days .card {
+        width: 100%;
+        font-size: 16px !important;
+        font-weight: 600;
+    }
+
+    .app-w .wrapper .days .card .content .dg {
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    .elements {
+        position: fixed;
+        top: 0;
+    }
+
+
+    .elements .c1 {
+        position: absolute;
+        left: -468px;
+        width: 577px;
+        height: 577px;
+        border-radius: 50%;
+        background: rgb(100, 91, 246);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        -webkit-animation: circle 10s infinite linear;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+    }
+
+    .elements .c2 {
+        position: absolute;
+        transform: translateX(75px);
+        right: -449px;
+        width: 634px;
+        height: 728px;
+        border-radius: 50%;
+        background: rgb(161, 15, 149);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        top: 334px;
+    }
+
+    .elements .c3 {
+        display: none;
+        position: absolute;
+        transform: translateX(75px);
+        right: -1678px;
+        width: 1072px;
+        height: 1071px;
+        border-radius: 50%;
+        background: rgb(161, 15, 149);
+        background: linear-gradient(315deg, rgba(100, 91, 246, 1) 0%, rgba(231, 231, 231, 1) 35%, rgba(0, 162, 204, 1) 100%);
+        animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+        mix-blend-mode: multiply;
+        filter: blur(24px);
+        top: -509px;
+    }
+
+
+    .leftBar .card .content {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .app-w .wrapper .card {
+        padding: 13px;
+    }
+}

@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react';
+import './assets/style.css'
+import NavigateBar from './components/NavigateBar';
+import { WeatherContext } from './providers/WeatherProvider';
+import NavigateBarLoader from './utils/Loader/NavigateBarLoader';
+import MainSide from './components/MainSide'
+import MainSideLoader from './utils/Loader/MainSideLoader';
 
 function App() {
+
+  const weather = useContext(WeatherContext);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <div className="elements">
+          <div className="c1" />
+          <div className="c2" />
+          <div className="c3" />
+          <div className="c4" />
+        </div>
+        <div className="app-w">
+          {weather.getWeather ? <NavigateBar /> : <NavigateBarLoader />}
+          {weather.getWeather ? <MainSide /> : <MainSideLoader />}
+        </div >
+      </>
     </div>
   );
 }
+
+
+
 
 export default App;
