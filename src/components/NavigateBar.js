@@ -32,7 +32,7 @@ export default function NavigateBar() {
                             <span className="bold"> Külək</span>
                         </div>
                         <div className="content">
-                            <span className="bolder">{weather.getWeather.current.wind_kph + 'kph'}</span>
+                            <span className="bolder">{weather.getWeather.current.wind_kph + 'km/s'}</span>
                         </div>
                     </div>
                     <div className="card">
@@ -50,7 +50,7 @@ export default function NavigateBar() {
                             <span> Təyziq</span>
                         </div>
                         <div className="content">
-                            <span className="bolder">{weather.getWeather.current.pressure_mb}</span>
+                            <span className="bolder">{weather.getWeather.current.pressure_mb + ' hPa'}</span>
                         </div>
                     </div>
                     <div className="card">
@@ -59,7 +59,7 @@ export default function NavigateBar() {
                             <span> UV</span>
                         </div>
                         <div className="content">
-                            <span className="bolder">7</span>
+                            <span className="bolder">{weather.getWeather.current.uv + '/10'}</span>
                         </div>
                     </div>
                     <small>Son yenilənmə tarixi {weather.getWeather.current.last_updated} </small>

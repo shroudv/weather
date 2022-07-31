@@ -1,9 +1,8 @@
 import Sun from '../assets/imgs/sun.png'
 import Partcloud from '../assets/imgs/partcloud.png'
-import PartRaincloud from '../assets/imgs/partly-rain-cloud.png'
 import Rain from '../assets/imgs/rainly.png'
 import Cloud from '../assets/imgs/cloud.png'
-
+ /* eslint-disable */
 export const getImage=(text)=>{
     let src='';
     if(text==='Sunny'){
@@ -18,12 +17,10 @@ export const getImage=(text)=>{
         src=Cloud
     }
 
-
     return src;
 }
 
 export const Translator=(text)=>{
-    console.log(text);
     let t='';
     if(text==='Mon'){
         t='Bazar ertəsi'
@@ -42,7 +39,6 @@ export const Translator=(text)=>{
     }else{
         t='NaN'
     }
-
 
     return t;
 }

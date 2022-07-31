@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { getImage, Translator } from '../helpers/General';
-import { WeatherContext } from '../providers/WeatherProvider';
 
 export default function Day(props) {
-    const weather = useContext(WeatherContext);
     const date = new Date(props.data.date)
     const dataName = date.toLocaleDateString('az-az', { weekday: 'long' })
     return (

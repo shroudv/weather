@@ -8,11 +8,11 @@ export default function SearchSide() {
     const [getResult, setResult] = useState();
     const weather = useContext(WeatherContext);
 
-    const clickHandler=()=>{
+    const clickHandler = () => {
         weather.setWeather(getResult)
-        setState({...getState,search:'', isShow:false})
+        setState({ ...getState, search: '', isShow: false })
     }
-
+    /* eslint-disable */
     useEffect(() => {
         // eslint-disable-next-line no-unused-expressions
         getState.search.length > 3 ?
@@ -23,21 +23,21 @@ export default function SearchSide() {
                 })
                 .catch((err) => console.err(err))
             : null
-    }, [getState.search]);
 
+    }, [getState.search]);
 
     return (
         <div className="searchSide">
             <input type="text" value={getState.search} onChange={(e) => setState({ ...getState, search: e.target.value })} placeholder="Şəhər Adı" />
-            <a href="#">
+            <div href="#">
                 <i className="fa-solid fa-chevron-right" />
-            </a>
+            </div>
             <div className={`resultSide${getState.isShow === true ? ' active' : ''}`}>
                 <div className="results">
                     {
                         getResult && getState.isShow === true ?
                             <div className="result">
-                                <h3  onClick={() =>clickHandler()}>{getResult.location.country + ',' + getResult.location.region}</h3>
+                                <h3 onClick={() => clickHandler()}>{getResult.location.country + ',' + getResult.location.region}</h3>
                             </div>
                             : null
                     }

@@ -5,7 +5,6 @@ export const WeatherContext = React.createContext();
 
 
 function WeatherProvider(props) {
-    const [getDay, setDay] = useState()
     const [getWeather, setWeather] = useState();
 
     useEffect(() => {
@@ -15,7 +14,7 @@ function WeatherProvider(props) {
     }, [])
 
     return (
-        <WeatherContext.Provider value={{ getWeather, setDay, setWeather }}>
+        <WeatherContext.Provider value={{ getWeather,  setWeather }}>
             {props.children}
         </WeatherContext.Provider>
     )

@@ -7,9 +7,9 @@ export default function NavigateBarLoader() {
             <div className="leftBar">
                 <div className="searchSide">
                     <Skeleton variant="text" className='w-100' height={'70px'} />
-                    <a href="#">
+                    <div>
                         <i className="fa-solid fa-chevron-right" />
-                    </a>
+                    </div>
                     <div className="resultSide">
                         <div className="results">
                             <div className="result">
