@@ -50,7 +50,7 @@ export default function NavigateBar() {
                             <span> Təyziq</span>
                         </div>
                         <div className="content">
-                            <span className="bolder">{weather.getWeather.current.pressure_mb + ' hPa'}</span>
+                            <span className="bolder">{weather.getWeather.current.pressure_mb + 'hPa'}</span>
                         </div>
                     </div>
                     <div className="card">
