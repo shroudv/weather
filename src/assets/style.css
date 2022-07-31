@@ -386,14 +386,37 @@ input {
     }
 }
 
+@media screen and (max-width:359px) {
 
-@media screen and (min-width:1365px) and (max-width:1919px) {
-    body {
+
+    .leftBar .card {
+        color: var(--text-primary-color);
+        box-shadow: 0 4px 30px rgb(0 0 0 / 4%);
+        border: 1px solid #ffffff45;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width:1024px) and (max-width:1919px) {
+    html{
         overflow: hidden;
+    }
+    body {
+        overflow: hidden !important;
     }
 
     .card img {
         width: 29%;
+    }
+
+    .elements {
+        width: 26%;
+        height: 50%;
+        position: fixed;
+        z-index: -1;
     }
 
 
