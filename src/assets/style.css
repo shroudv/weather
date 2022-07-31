@@ -386,6 +386,126 @@ input {
     }
 }
 
+
+@media screen and (min-width:1365px) and (max-width:1919px) {
+    body {
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 29%;
+    }
+
+
+    .leftBar .card .head span {
+        display: block;
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .card img {
+        width: 26%;
+    }
+
+    .leftBar .card .content {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .app-w .leftBar .searchSide {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .app-w .leftBar .searchSide .searchIcon {
+        padding: 2px;
+        border-radius: 50%;
+        position: absolute;
+        right: 7px;
+        transition: .2s;
+    }
+
+
+    .app-w .leftBar .currentDay h1{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .app-w .leftBar .currentDay .vicon {
+        width: 76px;
+        margin: auto;
+    }
+
+
+    .app-w .leftBar .currentDay .content{
+        font-size: 17px;
+    }
+
+    .app-w .leftBar .body {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 23px;
+    }
+
+
+    .app-w {
+        display: flex;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.705);
+        border: 1px solid rgba(230, 228, 228, 0.5);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    }
+
+    .app-w .wrapper .days {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px;
+        margin-top: 30px;
+    }
+
+    .app-w .leftBar {
+        align-items: center;
+        border-right: 1px solid #e9e7e7;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 40%;
+    }
+
+    .app-w .wrapper {
+        padding: 30px;
+        width: 60%;
+    }
+
+    .leftBar .card {
+        color: var(--text-primary-color);
+        box-shadow: 0 4px 30px rgb(0 0 0 / 4%);
+        border: 1px solid #ffffff45;
+        box-sizing: border-box;
+        width: 45%;
+        padding: 20px;
+    }
+    
+
+    .app-w .wrapper .days .card {
+        border: 1px solid #ffffff61;
+        width: 47%;
+    }
+
+    .app-w .wrapper .card .icon {
+        width: 55px;
+    }
+}
+
+
 @media screen and (min-width:768px) and (max-width:1023px) {
 
     body {
