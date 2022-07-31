@@ -19,7 +19,20 @@ export const getImage=(text)=>{
         src=Cloud
     }else if(text==='Thundery outbreaks possible'){
         src=Rain
+    }else if(text==='Fog'){
+        src=Cloud
+    }else if(text==='Clear'){
+        src=Sun
+    }else if(text==='Moderate rain'){
+        src=Rain
+    }else if(text==='Moderate or heavy rain shower'){
+        src=Rain
+    }else if(text==='Heavy rain'){
+        src=Rain
     }
+
+    
+    
 
    
 
